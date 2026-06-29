@@ -1,0 +1,41 @@
+Analysis
+
+Time Complexity:
+
+The recursive function makes one recursive call for each year.
+
+Recurrence Relation:
+
+T(n) = T(n - 1) + O(1)
+
+Solving the recurrence:
+
+T(n) = O(n)
+
+Therefore,
+
+Time Complexity = O(n)
+
+Space Complexity:
+
+Each recursive call is stored in the call stack until the recursion ends.
+
+For n recursive calls, the maximum stack depth is n.
+
+Therefore,
+
+Space Complexity = O(n)
+
+Optimization:
+
+1. This recursive solution is efficient because each recursive call computes only one subproblem.
+
+2. Memoization or Dynamic Programming is useful only when the same subproblems are solved multiple times (for example, Fibonacci series). Since this problem has no overlapping subproblems, memoization does not provide any benefit.
+
+3. The recursion can be replaced with an iterative loop, which eliminates the recursion stack.
+
+Iterative Solution:
+
+Time Complexity = O(n)
+
+Space Complexity = O(1)
